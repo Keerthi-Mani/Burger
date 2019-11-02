@@ -1,27 +1,26 @@
 {
-  "name": "burger",
+  "name": "Eat-Da-Burger",
   "version": "1.0.0",
-  "description": "",
-  "main": "server.js",
+  "description": "Bootcamp Homework 12",
+  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Keerthi-Mani/Burger.git"
+    "url": "git+https://github.com/jinana3/Eat-Da-Burger.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Keerthi-Mani/Burger/issues"
+    "url": "https://github.com/jinana3/Eat-Da-Burger/issues"
   },
-  "homepage": "https://github.com/Keerthi-Mani/Burger#readme",
+  "homepage": "https://github.com/jinana3/Eat-Da-Burger#readme",
   "dependencies": {
-    "express": "^4.17.1",
-    "express-handlebars": "^3.1.0",
-    "mysql": "^2.17.1",
-    "router": "^1.3.3"
+    "body-parser": "^1.18.2",
+    "express": "^4.16.3",
+    "express-handlebars": "^3.0.0",
+    "mysql": "^2.15.0"
   }
 }

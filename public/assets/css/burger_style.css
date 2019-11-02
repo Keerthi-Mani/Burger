@@ -1,0 +1,28 @@
+body {
+  background-image: url("/assets/img/img.jpg");
+}
+
+ul {
+  text-align: center;
+  padding: 5px;
+  margin: 5px;
+}
+
+.label {
+  font-weight: bold;
+}
+
+h1,
+h2 {
+  text-align: center;
+}
+
+.create-form {
+  text-align: center;
+  padding: 5px;
+  margin: 5px;
+}
+
+.form-group {
+  margin-bottom: 5px;
+}
