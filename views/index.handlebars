@@ -3,14 +3,14 @@
 <form class="create-form">
 
   <div class="form-group">
-    <label for="burg">Burger:</label>
+    <label for="burg"><strong>Burger:</strong></label>
     <input type="text" id="burg" name="burger_name" size="40px">
-  </div>
+  </div><br>
 
   <div class="form-group">
     <label for="devoured">
       <strong>Devoured?</strong>
-    </label><br>
+    </label><br><br>
 
     <input type="radio" name="devoured" value="0" checked>Needs to be Devoured!
     <br>
@@ -20,6 +20,7 @@
   <button type="submit">Add Burger</button>
 </form>
 </div>
+<hr>
 <h2>Burgers!</h2>
 
 <h2>Burgers waiting TO BE DEVOURED</h2>
@@ -35,7 +36,7 @@
   {{/unless}}
   {{/each}}
 </ul>
-
+<hr>
 <h2>DEVOURED Burgers</h2>
 
 <ul>

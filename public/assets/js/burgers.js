@@ -1,9 +1,6 @@
 // Make sure we wait to attach our handlers until the DOM is fully loaded.
-$(function() {
-
-
-
-  $(".create-form").on("submit", function(event) {
+$(function () {
+  $(".create-form").on("submit", function (event) {
     // Make sure to preventDefault on a submit event.
     event.preventDefault();
 
@@ -17,7 +14,7 @@ $(function() {
       type: "POST",
       data: newBurger
     }).then(
-      function() {
+      function () {
         console.log("created new Burger");
         // Reload the page to get the updated list
         location.reload();
@@ -25,8 +22,7 @@ $(function() {
     );
   });
 
-
-  $(".change-devour").on("click", function(event) {
+  $(".change-devour").on("click", function (event) {
     var id = $(this).data("id");
     var newDevour = $(this).data("newdevour");
 
@@ -39,7 +35,7 @@ $(function() {
       type: "PUT",
       data: newDevourState
     }).then(
-      function() {
+      function () {
         console.log("changed devour status to", newDevour);
         // Reload the page to get the updated list
         location.reload();
