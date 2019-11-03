@@ -64,11 +64,11 @@ Install all the application dependencies below from npm packages using,
 ```sh
 npm install
 ```
-- Express
-- Express-Handlebar
-- Router
-- MySQL
-- Body-parser
+- [Express](https://www.npmjs.com/package/express)
+- [Express-Handlebar](https://www.npmjs.com/package/express-handler)
+- [Router](https://www.npmjs.com/package/router)
+- [MySQL](https://www.npmjs.com/package/mysql)
+- [Body-parser](https://www.npmjs.com/package/body-parser)
 
 run: 
 ```sh
