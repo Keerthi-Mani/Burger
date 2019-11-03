@@ -46,9 +46,9 @@ function objToSql(ob) {
 // Object for all our SQL statement functions.
 var orm = {
   //selectAll()
-  selectAll: function(tableInput, cb) {
+  selectAll: function (tableInput, cb) {
     var queryString = "SELECT * FROM " + tableInput + ";";
-    connection.query(queryString, function(err, result) {
+    connection.query(queryString, function (err, result) {
       if (err) {
         throw err;
       }
@@ -56,13 +56,13 @@ var orm = {
     });
   },
 
-/*
-cb = function(res) {
-      cb(res); //second layer function
-    }*/
+  /*
+  cb = function(res) {
+        cb(res); //second layer function
+      }*/
 
   //insertOne()
-  insertOne: function(table, cols, vals, cb) {
+  insertOne: function (table, cols, vals, cb) {
     var queryString = "INSERT INTO " + table;
 
     queryString += " (";
@@ -74,7 +74,7 @@ cb = function(res) {
 
     console.log(queryString);
 
-    connection.query(queryString, vals, function(err, result) {
+    connection.query(queryString, vals, function (err, result) {
       if (err) {
         throw err;
       }
@@ -84,7 +84,7 @@ cb = function(res) {
   },
   //updateOne()
   // An example of objColVals would be {burger_name: delicious, devoured: true}
-  updateOne: function(table, objColVals, condition, cb) {
+  updateOne: function (table, objColVals, condition, cb) {
     var queryString = "UPDATE " + table;
 
     queryString += " SET ";
@@ -93,7 +93,7 @@ cb = function(res) {
     queryString += condition;
 
     console.log(queryString);
-    connection.query(queryString, function(err, result) {
+    connection.query(queryString, function (err, result) {
       if (err) {
         throw err;
       }
