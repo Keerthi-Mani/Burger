@@ -100,8 +100,22 @@ var orm = {
 
       cb(result); //do something with the returned sql query result
     });
+  },
+
+  //delete()
+  delete: function (table, condition, cb) {
+    var queryString = "DELETE FROM " + table;
+    queryString += " WHERE ";
+    queryString += condition;
+    connection.query(queryString, function (err, result) {
+      if (err) {
+        throw err;
+      }
+      cb(result);
+    });
   }
 };
+
 
 // Export the orm object for the model (burgers.js).
 module.exports = orm;
